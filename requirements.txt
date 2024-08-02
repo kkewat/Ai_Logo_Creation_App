@@ -2,3 +2,4 @@ streamlit
 speechrecognition
 requests
 pillow
+pyaudio

@@ -49,7 +49,7 @@ def generate_image(prompt):
         return None
 
 # Streamlit app layout
-st.title("AI Image Generator")
+st.title("AI Logo Generator")
 
 col1, col2 = st.columns([4, 1])
 with col1:

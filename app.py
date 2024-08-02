@@ -1,9 +1,9 @@
 import streamlit as st
 import requests
-import speech_recognition as sr
+#import speech_recognition as sr
 from PIL import Image
 from io import BytesIO
-
+'''
 # Function to handle speech recognition
 def recognize_speech():
     recognizer = sr.Recognizer()
@@ -20,7 +20,7 @@ def recognize_speech():
         except sr.RequestError as e:
             st.error(f"Error fetching results from Google Speech Recognition service: {e}")
             return ""
-
+'''
 # Function to generate image from prompt
 def generate_image(prompt):
     url = "https://api.limewire.com/api/image/generation"
@@ -56,10 +56,10 @@ with col1:
     prompt = st.text_input("Enter your prompt:")
 with col2:
     if st.button("🎤"):
-        speech_text = recognize_speech()
+        '''speech_text = recognize_speech()
         if speech_text:
             st.session_state.prompt = speech_text
-            prompt = speech_text
+            prompt = speech_text'''
 
 if st.button("Submit"):
     if prompt:

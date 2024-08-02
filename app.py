@@ -3,29 +3,12 @@ import requests
 #import speech_recognition as sr
 from PIL import Image
 from io import BytesIO
-'''
-# Function to handle speech recognition
-def recognize_speech():
-    recognizer = sr.Recognizer()
-    with sr.Microphone() as source:
-        st.info("Listening...")
-        audio_data = recognizer.listen(source)
-        try:
-            text = recognizer.recognize_google(audio_data)
-            st.success(f"You said: {text}")
-            return text
-        except sr.UnknownValueError:
-            st.error("Could not understand audio.")
-            return ""
-        except sr.RequestError as e:
-            st.error(f"Error fetching results from Google Speech Recognition service: {e}")
-            return ""
-'''
+
 # Function to generate image from prompt
 def generate_image(prompt):
     url = "https://api.limewire.com/api/image/generation"
     payload = {
-        "prompt": prompt,
+        "prompt": "logo of"+ prompt,
         "aspect_ratio": "1:1"
     }
     headers = {

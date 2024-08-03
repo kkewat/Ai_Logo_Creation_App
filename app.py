@@ -15,7 +15,7 @@ def generate_image(prompt):
         "Content-Type": "application/json",
         "X-Api-Version": "v1",
         "Accept": "application/json",
-        "Authorization": "Bearer lmwr_sk_75uGGIdjNl_jM6ZZ6GEbLcG2jxyLxdMANECcfjozGx7Nh7W1"
+        "Authorization": "Bearer lmwr_sk_6FWgbUSjmA_HjCcMJEbgx8YFrwITxjujbD3Bhdea4rAvqqX2"
     }
 
     response = requests.post(url, json=payload, headers=headers)
